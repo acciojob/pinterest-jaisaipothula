@@ -1,1 +1,30 @@
-/*  your css code here. If applicable */
+/* General Reset */
+body, h1, p, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+}
+
+.hero img {
+    width: 100%; /* Make sure the image takes full width */
+    height: 100%; /* Make sure the image takes full height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.explore-button {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
