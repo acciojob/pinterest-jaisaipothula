@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Styles */
 body, h1, p, a, img {
     margin: 0;
     padding: 0;
@@ -7,24 +7,36 @@ body, h1, p, a, img {
 
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    text-align: center;
     height: 100vh; /* Full viewport height */
+    position: relative;
 }
 
 .hero img {
-    width: 100%; /* Make sure the image takes full width */
-    height: 100%; /* Make sure the image takes full height */
-    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #fff; /* White text color */
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #fff; /* White text color */
+    margin: 10px 0;
 }
 
 .explore-button {
-    position: absolute;
-    bottom: 20px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
     border-radius: 5px;
+    text-decoration: none;
 }
